@@ -2785,7 +2785,7 @@ input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus,
 .wc-proceed-to-checkout .checkout-button:hover {
-	background-image: linear-gradient(to right, #9cc026, #5faf21);
+	background-image: linear-gradient(to right, #00aff0, #00aff0);
 }
 
 .theme_buttons.gradient1 a:hover, .theme_buttons.gradient1 a:active, .theme_buttons.gradient1 a:focus,
@@ -2820,7 +2820,7 @@ input[type="submit"]:focus:focus,
 .theme_button.gradient2[type*="submit"]:hover,
 .theme_button.gradient2[type*="submit"]:active,
 .theme_button.gradient2[type*="submit"]:focus {
-	background-image: linear-gradient(to right, #9cc026, #5faf21);
+	background-image: linear-gradient(to right, #00aff0, #00aff0);
 }
 
 .theme_button.styled_icon {
@@ -3201,7 +3201,7 @@ p > i + [class*="rt-icon"] {
 	text-align: center;
 	width: 40px;
 	height: 40px;
-	background: linear-gradient(to right, #9cc026, #5faf21);
+	background: linear-gradient(to right, #00aff0, #00aff0);
 	border-radius: 50%;
 }
 
@@ -6789,11 +6789,11 @@ a.underline-link {
 }
 
 .main_bg_color {
-	background-color: #5faf21;
+	background-color: #00aff0;
 }
 
 .main_bg_color2 {
-	background-color: #9cc026;
+	background-color: #00aff0;
 }
 
 .main_bg_color3 {
