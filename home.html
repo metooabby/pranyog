@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pranyog</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="prayog_theme.css">
+</head>
+
+<body>
+  <!-- Unyson messages modal -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+    <div class="fw-messages-wrap ls with_padding">
+      <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+      <!--
+      <ul class="list-unstyled">
+        <li>Message To User</li>
+      </ul>
+      -->
+    </div>
+  </div>
+  <!-- eof .modal -->
+  <!-- wrappers for visual page editor and boxed version of template -->
+  <div id="canvas">
+    <div id="box_wrapper">
+      <!-- template sections -->
+      <section class="page_topline ls background_cover">
+        <div class="container-fluid">
+          <div class="row flex-wrap v-center">
+            <div class="col-xs-12 col-md-6 col-md-push-3 col-sm-12 text-center">
+              <div class="inline-content big-spacing grey"> <span class="teaser darklinks">
+                  <span class="teaser_icon small main_bg_color round">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </span> <strong>1-800</strong>-123-4567 </span> <span class="teaser darklinks color2">
+                  <span class="teaser_icon small main_bg_color2 round">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span> <a href="mailto:example@example.com">example@example.com</a> </span> <span
+                  class="teaser darklinks color3">
+                  <span class="teaser_icon small main_bg_color3 round">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </span> 1197 Clifford St. Oakland, CA </span>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3 col-md-pull-6 col-sm-6 text-center text-md-left margin_0">
+              <div class="darklinks"> <a class="social-icon socicon-facebook" href="#" title="Facebook"></a> <a
+                  class="social-icon socicon-twitter" href="#" title="Twitter"></a> <a
+                  class="social-icon socicon-google" href="#" title="Twitter"></a> <a
+                  class="social-icon socicon-linkedin" href="#" title="Twitter"></a> <a
+                  class="social-icon socicon-youtube" href="#" title="Youtube"></a> </div>
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-6 text-center text-md-right">
+              <div class="widget widget_search">
+                <form method="get" class="searchform inline-form" action="./">
+                  <div class="form-group-wrap">
+                    <div class="form-group"> <label class="sr-only" for="topline-widget-search">Search for:</label>
+                      <input id="topline-widget-search" type="text" value="" name="search" class="form-control"
+                        placeholder="Search Keyword"> </div> <button type="submit"
+                      class="theme_button no_bg_button">ok</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="page_header_wrapper header_white bottom_negative_offset affix-top-wrapper" style="height: 84px;">
+        <header
+          class="page_header header_white divided_items tall_header template_header toggler_xs_right columns_margin_0 affix-top"
+          style="opacity: 1; top: 0px;">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 display_table">
+                <div class="header_left_logo display_table_cell" style="min-width: 0px;"> <a href="./" class="logo">
+                    <img src="images/logo.png" alt="">
+                  </a> </div>
+                <div class="header_mainmenu display_table_cell text-center">
+                  <!-- main nav start -->
+                  <nav class="mainmenu_wrapper">
+                    <ul class="mainmenu nav sf-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
+                      <li class="active"> <a href="index.html" class="sf-with-ul">Home</a><span
+                          class="sf-menu-item-mobile-toggler"></span>
+                        <ul style="display: none; margin-top: 10px;">
+                          <li> <a href="index.html">Home</a> </li>
+                          <li> <a href="index-static.html">Home static intro</a> </li>
+                          <li> <a href="index-single.html">Home single page</a> </li>
+                        </ul>
+                      </li>
+                      <li class=""> <a href="about.html" class="sf-with-ul">Pages</a><span
+                          class="sf-menu-item-mobile-toggler"></span>
+                        <ul style="display: none; margin-top: 10px;">
+                          <!-- features -->
+                          <li class=""> <a href="shortcodes_teasers.html" class="sf-with-ul">Shortcodes &amp;
+                              Widgets</a><span class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px; left: 100%;">
+                              <li> <a href="shortcodes_typography.html">Typography</a> </li>
+                              <li> <a href="shortcodes_buttons.html">Buttons</a> </li>
+                              <li> <a href="shortcodes_teasers.html">Teasers</a> </li>
+                              <li> <a href="shortcodes_progress.html">Progress</a> </li>
+                              <li> <a href="shortcodes_tabs.html">Tabs &amp; Collapse</a> </li>
+                              <li> <a href="shortcodes_bootstrap.html">Bootstrap Elements</a> </li>
+                              <li> <a href="shortcodes_widgets.html">Widgets</a> </li>
+                              <li> <a href="shortcodes_animation.html">Animation</a> </li>
+                              <li> <a href="shortcodes_icons.html">Template Icons</a> </li>
+                              <li> <a href="shortcodes_socialicons.html">Social Icons</a> </li>
+                            </ul>
+                          </li>
+                          <!-- eof features -->
+                          <li> <a href="services.html">Services</a> </li>
+                          <li> <a href="team.html">Team</a> </li>
+                          <li> <a href="plans.html">Plans</a> </li>
+                          <li> <a href="timetable.html">Timetable</a> </li>
+                          <!-- gallery -->
+                          <li> <a href="gallery-regular.html" class="sf-with-ul">Gallery</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <!-- Gallery regular -->
+                              <li> <a href="gallery-regular.html" class="sf-with-ul">Gallery Regular</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-regular.html">1 column</a> </li>
+                                  <li> <a href="gallery-regular-2-cols.html">2 columns</a> </li>
+                                  <li> <a href="gallery-regular-3-cols.html">3 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery regular -->
+                              <!-- Gallery full width -->
+                              <li> <a href="gallery-fullwidth.html" class="sf-with-ul">Gallery Full Width</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-fullwidth.html">2 columns</a> </li>
+                                  <li> <a href="gallery-fullwidth-3-cols.html">3 columns</a> </li>
+                                  <li> <a href="gallery-fullwidth-4-cols.html">4 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery full width -->
+                              <!-- Gallery extended -->
+                              <li> <a href="gallery-extended.html" class="sf-with-ul">Gallery Extended</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-extended.html">1 column</a> </li>
+                                  <li> <a href="gallery-extended-2-cols.html">2 columns</a> </li>
+                                  <li> <a href="gallery-extended-3-cols.html">3 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery extended -->
+                              <!-- Gallery carousel -->
+                              <li> <a href="gallery-carousel.html" class="sf-with-ul">Gallery Carousel</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-carousel.html">1 column</a> </li>
+                                  <li> <a href="gallery-carousel-2-cols.html">2 columns</a> </li>
+                                  <li> <a href="gallery-carousel-3-cols.html">3 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery carousel -->
+                              <!-- Gallery tile -->
+                              <li> <a href="gallery-tile.html">Gallery Tile</a> </li>
+                              <!-- eof Gallery tile -->
+                              <!-- Gallery left sidebar -->
+                              <li> <a href="gallery-left.html" class="sf-with-ul">Gallery Left Sidebar</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-left.html">1 column</a> </li>
+                                  <li> <a href="gallery-left-2-cols.html">2 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery left sidebar -->
+                              <!-- Gallery right sidebar -->
+                              <li> <a href="gallery-right.html" class="sf-with-ul">Gallery Right Sidebar</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-right.html">1 column</a> </li>
+                                  <li> <a href="gallery-right-2-cols.html">2 columns</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery right sidebar -->
+                              <!-- Gallery item -->
+                              <li> <a href="gallery-single.html" class="sf-with-ul">Gallery Item</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="gallery-single.html">Style 1</a> </li>
+                                  <li> <a href="gallery-single2.html">Style 2</a> </li>
+                                  <li> <a href="gallery-single3.html">Style 3</a> </li>
+                                </ul>
+                              </li>
+                              <!-- eof Gallery item -->
+                            </ul>
+                          </li>
+                          <!-- eof Gallery -->
+                          <!-- events -->
+                          <li> <a href="events-left.html" class="sf-with-ul">Events</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="events-left.html">Left Sidebar</a> </li>
+                              <li> <a href="events-right.html">Right Sidebar</a> </li>
+                              <li> <a href="events-full.html">Full Width</a> </li>
+                              <li> <a href="event-single-left.html" class="sf-with-ul">Single Event</a><span
+                                  class="sf-menu-item-mobile-toggler"></span>
+                                <ul style="display: none; margin-top: 10px;">
+                                  <li> <a href="event-single-left.html">Left Sidebar</a> </li>
+                                  <li> <a href="event-single-right.html">Right Sidebar</a> </li>
+                                  <li> <a href="event-single-full.html">Full Width</a> </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <!-- eof events -->
+                          <li> <a href="comingsoon1.html" class="sf-with-ul">Comingsoon</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="comingsoon1.html">Comingsoon</a> </li>
+                              <li> <a href="comingsoon2.html">Comingsoon 2</a> </li>
+                            </ul>
+                          </li>
+                          <li> <a href="faq.html" class="sf-with-ul">FAQ</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="faq.html">FAQ</a> </li>
+                              <li> <a href="faq2.html">FAQ 2</a> </li>
+                            </ul>
+                          </li>
+                          <li> <a href="404.html" class="sf-with-ul">404</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="404.html">404</a> </li>
+                              <li> <a href="4042.html">404 2</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- eof pages -->
+                      <li> <a href="about.html">About Us</a> </li>
+                      <li> <a href="#" class="sf-with-ul">Features</a><span class="sf-menu-item-mobile-toggler"></span>
+                        <div class="mega-menu" style="left: -519.688px; display: none; margin-top: 10px;">
+                          <ul class="mega-menu-row">
+                            <li class="mega-menu-col"> <a href="#">Headers</a>
+                              <ul>
+                                <li> <a href="header1.html">Header Type 1</a> </li>
+                                <li> <a href="header2.html">Header Type 2</a> </li>
+                                <li> <a href="header3.html">Header Type 3</a> </li>
+                                <li> <a href="header4.html">Header Type 4</a> </li>
+                                <li> <a href="header5.html">Header Type 5</a> </li>
+                                <li> <a href="header6.html">Header Type 6</a> </li>
+                              </ul>
+                            </li>
+                            <li class="mega-menu-col"> <a href="#">Side Menus</a>
+                              <ul>
+                                <li> <a href="header_side1.html">Slide Left Light</a> </li>
+                                <li> <a href="header_side2.html">Slide Right Light</a> </li>
+                                <li> <a href="header_side3.html">Push Left Light</a> </li>
+                                <li> <a href="header_side4.html">Push Right Light</a> </li>
+                                <li> <a href="header_side5.html">Slide Left Dark</a> </li>
+                                <li> <a href="header_side6.html">Slide Right Dark</a> </li>
+                                <li> <a href="header_side7.html">Push Left Dark</a> </li>
+                                <li> <a href="header_side8.html">Push Right Dark</a> </li>
+                                <li> <a href="header_side_superfish.html">Superfish Menu</a> </li>
+                                <li> <a href="header_side_sticked.html">Sticked Menu</a> </li>
+                              </ul>
+                            </li>
+                            <li class="mega-menu-col"> <a href="breadcrumbs1.html">Breadcrumbs</a>
+                              <ul>
+                                <li> <a href="breadcrumbs1.html">Breadcrumbs 1</a> </li>
+                                <li> <a href="breadcrumbs2.html">Breadcrumbs 2</a> </li>
+                                <li> <a href="breadcrumbs3.html">Breadcrumbs 3</a> </li>
+                                <li> <a href="breadcrumbs4.html">Breadcrumbs 4</a> </li>
+                                <li> <a href="breadcrumbs5.html">Breadcrumbs 5</a> </li>
+                                <li> <a href="breadcrumbs6.html">Breadcrumbs 6</a> </li>
+                              </ul>
+                            </li>
+                            <li class="mega-menu-col"> <a href="footer1.html">Footers</a>
+                              <ul>
+                                <li> <a href="footer1.html">Footer Type 1</a> </li>
+                                <li> <a href="footer2.html">Footer Type 2</a> </li>
+                                <li> <a href="footer3.html">Footer Type 3</a> </li>
+                                <li> <a href="footer4.html">Footer Type 4</a> </li>
+                                <li> <a href="footer5.html">Footer Type 5</a> </li>
+                                <li> <a href="footer6.html">Footer Type 6</a> </li>
+                              </ul>
+                            </li>
+                            <li class="mega-menu-col"> <a href="copyright1.html">Copyrights</a>
+                              <ul>
+                                <li> <a href="copyright1.html">Copyrights 1</a> </li>
+                                <li> <a href="copyright2.html">Copyrights 2</a> </li>
+                                <li> <a href="copyright3.html">Copyrights 3</a> </li>
+                                <li> <a href="copyright4.html">Copyrights 4</a> </li>
+                                <li> <a href="copyright5.html">Copyrights 5</a> </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- eof mega menu -->
+                      </li>
+                      <!-- eof features -->
+                      <!-- blog -->
+                      <li> <a href="blog-right.html" class="sf-with-ul">Blog</a><span
+                          class="sf-menu-item-mobile-toggler"></span>
+                        <ul style="display: none; margin-top: 10px;">
+                          <li> <a href="blog-right.html">Right Sidebar</a> </li>
+                          <li> <a href="blog-left.html">Left Sidebar</a> </li>
+                          <li> <a href="blog-full.html">No Sidebar</a> </li>
+                          <li> <a href="blog-mosaic.html">Blog Grid</a> </li>
+                          <li> <a href="blog-single-right.html" class="sf-with-ul">Post</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="blog-single-right.html">Right Sidebar</a> </li>
+                              <li> <a href="blog-single-left.html">Left Sidebar</a> </li>
+                              <li> <a href="blog-single-full.html">No Sidebar</a> </li>
+                            </ul>
+                          </li>
+                          <li> <a href="blog-single-video-right.html" class="sf-with-ul">Video Post</a><span
+                              class="sf-menu-item-mobile-toggler"></span>
+                            <ul style="display: none; margin-top: 10px;">
+                              <li> <a href="blog-single-video-right.html">Right Sidebar</a> </li>
+                              <li> <a href="blog-single-video-left.html">Left Sidebar</a> </li>
+                              <li> <a href="blog-single-video-full.html">No Sidebar</a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <!-- eof blog -->
+                      <!-- shop -->
+                      <li> <a href="shop.html" class="sf-with-ul">Shop</a><span
+                          class="sf-menu-item-mobile-toggler"></span>
+                        <ul style="display: none; margin-top: 10px;">
+                          <li> <a href="shop.html">Shop</a> </li>
+                          <li> <a href="shop-product.html">Single Product</a> </li>
+                          <li> <a href="shop-cart.html">Shopping Cart</a> </li>
+                          <li> <a href="shop-checkout.html">Checkout</a> </li>
+                          <li> <a href="shop-register.html">Registration</a> </li>
+                        </ul>
+                      </li>
+                      <!-- eof shop -->
+                      <!-- contacts -->
+                      <li> <a href="contact.html" class="sf-with-ul">Contacts</a><span
+                          class="sf-menu-item-mobile-toggler"></span>
+                        <ul style="display: none; margin-top: 10px;">
+                          <li> <a href="contact.html">Contact 1</a> </li>
+                          <li> <a href="contact2.html">Contact 2</a> </li>
+                          <li> <a href="contact3.html">Contact 3</a> </li>
+                          <li> <a href="contact4.html">Contact 4</a> </li>
+                        </ul>
+                      </li>
+                      <!-- eof contacts -->
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                  <!-- header toggler --><span class="toggle_menu"><span></span></span>
+                </div>
+                <div class="header_right_buttons display_table_cell text-right hidden-xs" style="min-width: 220px;">
+                  <a href="contact.html" class="theme_button gradient2 min_width_button"><span
+                      class="additional">Request</span> call back</a> </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section
+        class="intro_section page_mainslider ds all-scr-cover top_mask_subtract bottom_mask_subtract bottom_overlap">
+        <div class="flexslider" data-dots="true" data-nav="false">
+          <ul class="slides">
+            <li
+              style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"
+              class="" data-thumb-alt="">
+              <div class="slide-image-wrap" style="background-image: url(&quot;images/slide01.jpg&quot;);"> <img
+                  src="images/slide01.jpg" alt="" draggable="false"> </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 text-center">
+                    <div class="slide_description_wrapper">
+                      <div class="slide_description">
+                        <div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
+                          style="visibility: hidden;">
+                          <p class="small-text">Family owned business</p>
+                        </div>
+                        <div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
+                          style="visibility: hidden;">
+                          <h2> Highest Quality Medical Marijuana... </h2>
+                        </div>
+                        <div class="intro-layer animated fadeInUp" data-animation="fadeInUp"
+                          style="visibility: hidden;">
+                          <p class="highlight3">We're proud to be one of only a few independent licensed producers</p>
+                        </div>
+                      </div>
+                      <!-- eof .slide_description -->
+                    </div>
+                    <!-- eof .slide_description_wrapper -->
+                  </div>
+                  <!-- eof .col-* -->
+                </div>
+                <!-- eof .row -->
+              </div>
+              <!-- eof .container -->
+            </li>
+          </ul>
+          <div class="container-fluid nav-container">
+            <ol class="flex-control-nav flex-control-paging">
+              <li><a href="#" class="">01</a></li>
+              <li><a href="#" class="flex-active">02</a></li>
+              <li><a href="#">03</a></li>
+            </ol>
+          </div>
+        </div>
+        <!-- eof flexslider -->
+      </section>
+      <section id="highlights" class="ls ms section_padding_top_50">
+        <div class="container">
+          <div class="row loop-colors">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="with_padding big-padding with_background rounded bottom_color_border text-center"> <img
+                  src="images/highlight1.jpg" class="round" alt="">
+                <h4><a href="#">Content A</a></h4>
+                <p>Low carbon footprint,-Thats why we buy local, reuse</p>
+                <p> <a href="#" class="theme_button color1 inverse small_button min_width_button">more</a> </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="with_padding big-padding with_background rounded bottom_color_border text-center"> <img
+                  src="images/highlight2.jpg" class="round" alt="">
+                <h4><a href="#">Content B</a></h4>
+                <p>Our cannabis is greenhouse grown with love and passion</p>
+                <p> <a href="#" class="theme_button color1 inverse small_button min_width_button">more</a> </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-0">
+              <div class="with_padding big-padding with_background rounded bottom_color_border text-center"> <img
+                  src="images/highlight3.jpg" class="round" alt="">
+                <h4><a href="#">Content C</a></h4>
+                <p>What better source of energy than the sun itself</p>
+                <p> <a href="#" class="theme_button color1 inverse small_button min_width_button">more</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="ls ms section_padding_top_135 section_padding_bottom_140">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 text-center text-sm-left">
+              <h2 class="section_header">About Us</h2>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-6 text-center text-sm-left text-lg-center">
+              <p class="section_excerpt grey">Lorem Ipsum Dolor Sit Amet</p>
+              <p>From seed to sale, we take pride in our cannabis to ensure a smooth experience. We have established
+                ourselves along various points in the cannabis, industrial hemp and related services supply chain.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 text-center text-sm-right">
+              <p class="bottommargin_25"> <span class="fontsize_20"><strong class="grey regular playfair">John E.
+                    Doe</strong></span> <span class="small-text highlight2">founder</span> </p> <img
+                src="images/signature.png" alt="">
+            </div>
+            <div class="col-xs-12 text-center text-sm-left">
+              <a href="about.html" class="theme_button gradient1 min_width_button">Read more</a> </div>
+          </div>
+        </div>
+      </section>
+      <section id="products"
+        class="ds parallax section_padding_top_150 section_padding_bottom_150 columns_margin_bottom_30"
+        style="background-position: 50% -4px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <h2 class="section_header"><span class="highlight">Buy</span><br> Cannabis</h2> <a href="shop.html"
+                class="theme_button gradient2 min_width_button">Go to shop</a>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="owl-carousel loop-colors owl-loaded owl-drag owl-theme" data-responsive-lg="3"
+                data-responsive-md="2" data-responsive-sm="3" data-responsive-xs="2" data-responsive-xxs="1"
+                data-nav="true">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage"
+                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1800px;">
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/01.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">Chemdawg</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $15 - $320<br> <span class="grey">THC:</span> 24%<br>
+                              <span class="grey">CBD:</span> 3%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/02.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">Headband</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $20 - $380<br> <span class="grey">THC:</span> 42%<br>
+                              <span class="grey">CBD:</span> 5%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/03.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">Pineapple Express</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $18 - $240<br> <span class="grey">THC:</span> 35%<br>
+                              <span class="grey">CBD:</span> 2%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/04.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">Trainwreck</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $20 - $500<br> <span class="grey">THC:</span> 22%<br>
+                              <span class="grey">CBD:</span> 7%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/05.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">AK-47</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $20 - $360<br> <span class="grey">THC:</span> 17%<br>
+                              <span class="grey">CBD:</span> 2%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
+                      <article
+                        class="product vertical-item content-padding rounded overflow_hidden ls bottom_color_border text-center">
+                        <div class="item-media"> <img src="images/shop/06.jpg" alt=""> </div>
+                        <div class="item-content">
+                          <h3 class="entry-title"> <a href="shop-product.html">White Window</a> </h3>
+                          <div class="entry-content">
+                            <p> <span class="grey">Price:</span> $22 - $340<br> <span class="grey">THC:</span> 31%<br>
+                              <span class="grey">CBD:</span> 3%<br> </p>
+                          </div>
+                          <p class="product_buttons"> <a href="shop-product.html"
+                              class="theme_button color1 min_width_button small_button">buy now</a> </p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled"><span>prev</span></div>
+                  <div class="owl-next"><span>next</span></div>
+                </div>
+                <div class="owl-dots disabled"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services"
+        class="ls background_cover section_padding_top_150 section_padding_bottom_140 columns_margin_bottom_30">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <h2 class="section_header"><span class="highlight4">Our</span><br> Products</h2> <a href="services.html"
+                class="theme_button gradient1 styled_icon two_lines_button min_width_button">
+                <span class="icon">
+                  <img src="images/bbb.png" alt="">
+                </span>
+                <span>Accredited<br> Business</span>
+              </a>
+            </div>
+            <div class="col-xs-12 col-md-9 topmargin_0">
+              <div class="row flex-wrap services-row columns_padding_30">
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/01.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Germinate New Seeds</a> </h3>
+                      </div>
+                    </div>
+                    <p>Easiest ways to germinate seed is to place it directly in a specialized starter cube.</p>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/02.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Stems and Leaves</a> </h3>
+                      </div>
+                    </div>
+                    <p>In this stage, our plant will focus only on cannabis getting big and strong, like a kid.</p>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/03.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Germinate New Seeds</a> </h3>
+                      </div>
+                    </div>
+                    <p>Easiest ways to germinate seed is to place it directly in a specialized starter cube.</p>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/04.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Buds Start Growing!</a> </h3>
+                      </div>
+                    </div>
+                    <p>Cannabis goes through "puberty" and basically reveals whether they are a boy or a girl.</p>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/05.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Friendly Nutrients</a> </h3>
+                      </div>
+                    </div>
+                    <p>It's important to pay close attention to your cannabis plants during the Flowering stage.</p>
+                  </article>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-4">
+                  <article>
+                    <div class="media bottommargin_25">
+                      <div class="media-left media-middle"> <img src="images/services-icons/06.png" alt=""> </div>
+                      <div class="media-body media-middle">
+                        <h3 class="entry-title small"> <a href="service-single.html">Harvest Our Cannabis</a> </h3>
+                      </div>
+                    </div>
+                    <p>Hardest part of growing cannabis for many grower's is waiting for the right time to harvest.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="ls ms parallax section_padding_top_150 section_padding_bottom_150 columns_margin_bottom_40 columns_padding_30" style="background-position: 50% -21px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<h2 class="section_header"> <span class="highlight">Our</span><br> Blogs </h2>
+							<div class="widget widget_categories">
+								<ul class="darklinks">
+									<li class=""> <a href="blog-full.html">Factory</a> </li>
+									<li class=""> <a href="blog-full.html">News</a> </li>
+									<li class=""> <a href="blog-full.html">Plant</a> </li>
+									<li class=""> <a href="blog-full.html">Products</a> </li>
+								</ul>
+							</div>
+							<p class="topmargin_40"> <a href="blog-left.html" class="theme_button gradient2 min_width_button">
+						Go to Blog
+					</a> </p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-9">
+							<div class="owl-carousel loop-colors owl-loaded owl-drag owl-theme" data-nav="true" data-dots="false" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2">
+								
+								
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1489px;"><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/02.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Overview of 2018 Highlights</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/03.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Provides Update on 30,000 Sq.</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>At vero eos et accusam et justo duo dolores et rebum clita kasd gubergren.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/04.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">We Launches New CBD Product</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Lorem ipsum dolor sit consetetur sadipscing elitr sed diam nonumy.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/05.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Overview of 2018 Highlights</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/06.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">We Launches New CBD Product</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>At vero eos et accusam et justo duo dolores et rebum clita kasd gubergren.</p>
+										</div>
+									</div>
+								</article></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><span>prev</span></div><div class="owl-next"><span>next</span></div></div><div class="owl-dots disabled"></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+      <section id="testimonials" class="cs gradient1 parallax section_padding_top_145 section_padding_bottom_150"
+        style="background-position: 50% -4px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <h2 class="section_header"> Client <span class="grey">Feedbacks</span> </h2>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="owl-carousel owl-loaded owl-drag owl-theme" data-responsive-lg="3" data-responsive-md="2"
+                data-responsive-sm="2" data-nav="true" data-dots="true">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage"
+                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1200px;">
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <blockquote>
+                        <footer class="media"> <span class="media-left media-middle">
+                            <span class="avatar">
+                              <img src="images/faces/01.jpg" alt="">
+                            </span> </span> <span class="media-body media-middle">
+                            <h5>Emily<br> Wittacker</h5>
+                            <span class="small-text">client</span>
+                          </span>
+                        </footer>
+                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr iam nonumy eirmod tempor invidunt.</p>
+                      </blockquote>
+                    </div>
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <blockquote>
+                        <footer class="media"> <span class="media-left media-middle">
+                            <span class="avatar">
+                              <img src="images/faces/02.jpg" alt="">
+                            </span> </span> <span class="media-body media-middle">
+                            <h5>Robby<br> Rudolph</h5>
+                            <span class="small-text">client</span>
+                          </span>
+                        </footer>
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren, no sea
+                          takimata.</p>
+                      </blockquote>
+                    </div>
+                    <div class="owl-item active" style="width: 270px; margin-right: 30px;">
+                      <blockquote>
+                        <footer class="media"> <span class="media-left media-middle">
+                            <span class="avatar">
+                              <img src="images/faces/03.jpg" alt="">
+                            </span> </span> <span class="media-body media-middle">
+                            <h5>Jerry<br> Niven</h5>
+                            <span class="small-text">client</span>
+                          </span>
+                        </footer>
+                        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                      </blockquote>
+                    </div>
+                    <div class="owl-item" style="width: 270px; margin-right: 30px;">
+                      <blockquote>
+                        <footer class="media"> <span class="media-left media-middle">
+                            <span class="avatar">
+                              <img src="images/faces/04.jpg" alt="">
+                            </span> </span> <span class="media-body media-middle">
+                            <h5>Emily<br> Wittacker</h5>
+                            <span class="small-text">client</span>
+                          </span>
+                        </footer>
+                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr iam nonumy eirmod tempor invidunt.</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-nav">
+                  <div class="owl-prev disabled"><span>prev</span></div>
+                  <div class="owl-next"><span>next</span></div>
+                </div>
+                <div class="owl-dots">
+                  <div class="owl-dot active"><span></span></div>
+                  <div class="owl-dot"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="ls ms parallax section_padding_top_150 section_padding_bottom_150 columns_margin_bottom_40 columns_padding_30" style="background-position: 50% -21px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-3">
+							<h2 class="section_header"> <span class="highlight">Our</span><br> Gallery </h2>
+							<p class="topmargin_40"> <a href="blog-left.html" class="theme_button gradient2 min_width_button">
+					  See More
+					</a> </p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-9">
+							<div class="owl-carousel loop-colors owl-loaded owl-drag owl-theme" data-nav="true" data-dots="false" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2">
+									<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1489px;"><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/02.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Overview of 2018 Highlights</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/03.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Provides Update on 30,000 Sq.</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>At vero eos et accusam et justo duo dolores et rebum clita kasd gubergren.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item active" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/04.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">We Launches New CBD Product</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Lorem ipsum dolor sit consetetur sadipscing elitr sed diam nonumy.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/05.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">Overview of 2018 Highlights</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>Eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+										</div>
+									</div>
+								</article></div><div class="owl-item" style="width: 267.667px; margin-right: 30px;"><article class="post vertical-item content-padding with_background bottom_color_border rounded overflow_hidden text-center">
+									<div class="item-media entry-thumbnail"> <img src="images/gallery-square/06.jpg" alt=""> </div>
+									<div class="item-content ls">
+										<header class="entry-header">
+											<div class="entry-meta meta-media-overlay">
+												<div class="main_bg_color darklinks"> <a href="blog-single-left.html">
+											<time datetime="2017-10-03T08:50:40+00:00">
+											15 jan, 2018</time>
+										</a> </div>
+											</div>
+											<h3 class="entry-title small"> <a href="blog-single-left.html">We Launches New CBD Product</a> </h3> <span class="categories-links highlightlinks">
+									<a href="blog-left.html">Products</a>
+								</span> </header>
+										<div class="entry-content content-3lines-ellipsis">
+											<p>At vero eos et accusam et justo duo dolores et rebum clita kasd gubergren.</p>
+										</div>
+									</div>
+								</article></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><span>prev</span></div><div class="owl-next"><span>next</span></div></div><div class="owl-dots disabled"></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+      <footer
+        class="page_footer footer_variant1 ds top_mask_add bottom_mask_add section_padding_top_75 section_padding_bottom_105 columns_margin_bottom_40">
+        <div class="container">
+          <div class="row flex-wrap v-center">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-md-push-4 text-center">
+              <div class="logo bottommargin_25"> <img src="images/logo-vertical-light.png" alt=""> </div>
+              <p class="darklinks regular"> <span class="bold">1-800</span>-123-4567<br> <a
+                  href="mailto:example@example.com">example@example.com</a><br> 1197 Clifford St. Oakland, CA 94607
+              </p>
+              <p class="topmargin_30"> <a class="social-icon color-icon bg-icon rounded-icon socicon-facebook" href="#"
+                  title="Facebook"></a> <a class="social-icon color-icon bg-icon rounded-icon socicon-twitter" href="#"
+                  title="Twitter"></a> <a class="social-icon color-icon bg-icon rounded-icon socicon-googleplus"
+                  href="#" title="Google Plus"></a> </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-pull-4 text-center">
+              <div class="with_padding ls rounded">
+                <div class="widget widget_mailchimp">
+                  <h3 class="widget-title">Newsletter Subscribe</h3>
+                  <form class="signup" action="./" method="get">
+                    <div class="form-group-wrap">
+                      <div class="form-group"> <label for="mailchimp" class="sr-only">Enter your email here</label>
+                        <input name="email" type="email" id="mailchimp" class="mailchimp_email form-control"
+                          placeholder="Email Address"> </div> <button type="submit"
+                        class="theme_button color1 no_bg_button">Submit</button>
+                    </div>
+                    <div class="response"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="widget widget_banner">
+                <div class="banner-wrap">
+                  <div class="banner text-center"> <strong class="big grey">
+                      Get <span class="highlight4">1O%</span> Off
+                    </strong> <span class="small-text">
+                      <span class="highlight">Code:</span> <span class="highlight2">wantdiscount</span> </span>
+                    <div class="media-links"> <a href="#" class="abs-link"></a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section class="page_copyright cs gradient2 section_padding_top_40 section_padding_bottom_40">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p class="black">© Copyright 2020 All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+
+  <audio src="" autoplay loop>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+  </audio>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
